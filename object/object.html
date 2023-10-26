@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    const person = {
+        name:["Raj","Kumar"], 
+        idno:13, 
+        des:"AssociateSoftware",
+        dep:"InformationTechnology",
+        //  Creating Functions
+        bio:function(){
+            console.log(`${this.name[0]} ${this.name[1]}`);
+        },
+        companyinfo:function()
+        {
+        console.log(`the company id is ${this.idno} and the designation is ${this.des} then the department is ${this.dep}`);
+        },
+    };
+    function logProperty(propertyName)
+    {
+        console.log(person[propertyName]);
+    }
+    logProperty("name.first");
+    logProperty("name.last");
+    logProperty("idno");
+    logProperty("dep");
+    logProperty("des");
+    person.idno=46;
+    person["name"]["last"]="kiran";
+    person["des"]="Tester";
+    person["dep"]="CSE";
+    console.log("Welcome Everybody!");
+    
+   
+    const myDataName="height";
+    const myDataValue="1.75m";
+    person[myDataName]=myDataValue;
+    function person(name,city)
+    {
+        this.name=name;
+        this.city=city;
+        this.bio=function()
+        {
+            console.log(`Hi! I'm ${this.name} and living in ${this.city}`);
+        };
+    }
+    const dev=new person("dev","vizag");
+    dev.name;
+    dev.companyinfo;
+    
+    const jay=new person("jay","HYD");
+    jay.name;
+    jay.companyinfo;
+
+</script>
+</body>
+</html> 
