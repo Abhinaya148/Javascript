@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="logical"></div>
+<script>
+    let a=4;
+    let b=8;
+    document.getElementById("logical").innerHTML=(a<10 && b>3)+"<br>"+(a>10 && b<7);
+</script>
+<br>
+<div id="logicals"></div>
+<script>
+    let x=4;
+    let y=8;
+    document.getElementById("logicals").innerHTML=(x<10 || y>13)+"<br>"+(x>10 || y<7);
+</script>
+<br>
+<div id="logicalnot"></div>
+<script>
+    let c=4;
+    let d=8;
+    document.getElementById("logicalnot").innerHTML=!(c==d)+"<br>"+!(c<d);
+</script>
+<br>
+<div id="comparision"></div>
+    <script>
+        let f=8;
+        document.getElementById("comparision").innerHTML=(f<=6);
+    </script>
+
+<div id="bitwiseand"></div>
+<script>
+    document.getElementById("bitwiseand").innerHTML=6 & 2;
+</script>
+<div id="bitwiseor"></div>
+<script>
+    document.getElementById("bitwiseor").innerHTML=6 | 2;
+</script>
+<div id="bitwisexor"></div>
+<script>
+    document.getElementById("bitwisexor").innerHTML=5 ^ 1;
+</script>
+<div id="bitwisenot"></div>
+<script>
+    document.getElementById("bitwisenot").innerHTML=~6;
+</script>
+</body>
+</html>
