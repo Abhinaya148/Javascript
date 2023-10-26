@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JavaScript</title>
+    </head>
+    <body>
+        <div id="name" style="background-color: brown; text-align: center; color: black; height: 100px; padding: 30px; border:2px solid black;"></div>
+        <div id="role" style="background-color: blueviolet; text-align: center; color: black; height: 100px; padding: 30px;"></div>
+        <script>
+            var name="<h1>Surabhi Abhinaya</h1>";
+            var role="<h1>Associate Software Engineer</h1>";
+            document.getElementById("name").innerHTML=name;
+            document.getElementById("role").innerHTML=role;
+        </script>
+        <!-- creating functions -->
+        <div id="demo"></div>
+        <script>
+            console.log("hello world");
+            let value=factorial(6)
+            function factorial(n){
+                return n*(n-1);
+            }
+            document.getElementById("demo").innerHTML=value
+        </script><br>
+        <!-- creating objects -->
+        <div id="Student"></div>
+            <script>
+                const course={name:"pavan", branch:"CSE", id:"13", Location:"HYD"}
+                document.getElementById("Student").innerHTML="The student name is "+course.name+" and course is "+course.branch;
+            </script>
+            <br>
+            <!-- creating events -->
+            <div id="Time"></div>
+        
+            <button onclick="document.getElementById('Time').innerHTML=Date();">Click to view the Time</button>
+            <br>
+            <!-- strings -->
+            <div id="pack"></div>
+            <script>
+            let text="blueviolet";
+            document.getElementById("pack").innerHTML=text;
+            </script>
+            <!-- strings with length -->
+            <div id="demo1"></div>
+            <script>
+                let text1="value"
+            document.getElementById("demo1").innerHTML=text1.length;
+            </script>
+            <!-- strings with slice -->
+            <div id="demo2"></div>
+            <script>
+                let text2="Apple, Banana, Kiwi,Orange";
+                let part=text2.slice(7,16);
+                
+                document.getElementById("demo2").innerHTML=part;
+                
+            </script>
+            <div id="demo3"></div>
+            <script>
+                let text3="Apple, Banana, Kiwi,Orange";
+                let part1=text3.slice(-7);
+                document.getElementById("demo3").innerHTML=part1;
+            </script>
+            <!-- strings with sub string -->
+            <div id="demo4"></div>
+            <script>
+                let str="Apple, Banana, Kiwi,Orange";
+                document.getElementById("demo4").innerHTML=str.substring(7,20);
+            </script>
+            <!-- strings with sub string length -->
+            <div id="demo5"></div>
+            <script>
+                let str1="Apple, Banana, Kiwi,Orange";
+                document.getElementById("demo5").innerHTML=str1.substr(7,5);
+            </script>
+
+            <div id="demo6"></div>
+            <script>
+                let str2="Apple, Banana, Kiwi,Orange";
+                document.getElementById("demo6").innerHTML=str2.substr(-8);
+            </script>
+            <br>
+
+            <!-- Arrays  -->
+            <div id="demo7"></div>
+            <script>
+                const cars=["Ford","maruthi","venue","swift"];
+        
+                document.getElementById("demo7").innerHTML=cars;
+            </script>
+            <br>
+            <!-- changing array elements -->
+            <div id="demo8"></div>
+            <script>
+                const cars1=["Ford","maruthi","venue","swift"];
+                cars1[2]="KIA";
+                document.getElementById("demo8").innerHTML=cars1;
+            </script>
+            <br>
+            <!-- length of array -->
+            <div id="demo9"></div>
+            <script>
+                const cars2=["Ford","maruthi","venue","swift","Kia"];
+                
+                document.getElementById("demo9").innerHTML=cars2.length;
+            </script>
+            <br>   
+             <!--replacing the words  -->
+            <button onclick="myFunction()">Try it</button>
+            <div id="replace">Please visit Microsoft</div>
+            
+            <script>
+                function myFunction()
+                {
+                    let text=document.getElementById("replace").innerHTML;
+                    document.getElementById("replace").innerHTML=text.replace("Microsoft","W3schools");
+                }
+            </script>
+            <br>
+            <!-- converting text to upper case -->
+            <button onclick="myUpper()">Try it</button>
+            <div id="upper">visit Microsoft</div>
+            
+            <script>
+            
+                function myUpper()
+                {
+                    let text=document.getElementById("upper").innerHTML;
+                    document.getElementById("upper").innerHTML=text.toUpperCase();
+                }
+            </script>
+            <br>
+            <!-- converting text to lower case -->
+            <button onclick="myLower()">Try it</button>
+            <div id="lower">Visit Microsoft</div>
+            
+            <script>
+            
+                function myLower()
+                {
+                    let text=document.getElementById("lower").innerHTML;
+                    document.getElementById("lower").innerHTML=text.toLowerCase();
+                }
+            </script>
+            <br>
+            <!-- concating -->
+            <div id="concat"></div>
+            <script>
+                let name="Surabhi ";
+                let para="Abhinaya";
+                let mix=name.concat(para);
+                document.getElementById("concat").innerHTML=mix;
+
+            </script>
+            <br>
+            <br>
+            <!-- to remove white spaces -->
+            <div id="trim">
+                <script>
+                    let x="     Movies    ";
+                    let y=x.trim();
+                    document.getElementById("trim").innerHTML="Length of x="+x.length+"<br>Length of y="+y.length;
+                </script>
+            </div>
+
+            <div id="arithematic"></div>
+            <script>
+                let a=57;
+                let b=7;
+                let z=a+b;
+                let c=a*b;
+                let d=a-b;
+                let e=a/b;
+                let f=a%b;
+                document.getElementById("arithematic").innerHTML="Addition="+z+"<br>Subtraction="+d+"<br>Multiplication="+c+"<br>Division="+e+"<br>Remainder="+f;
+            </script>
+            <br>
+            <div id="assignment"></div>
+            <script>
+                // let p=57;
+                let resc=7;
+                let rep=8;
+                let rez=12;
+                resc*= 9;
+                rep+=12; //rep=rep+12   
+                rez-=8;
+                
+                document.getElementById("assignment").innerHTML="Add="+rep+"<br>sub="+rez+"<br>mul="+resc;
+
+            </script>
+            
+    </body>
+</html>
